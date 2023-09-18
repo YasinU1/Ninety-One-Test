@@ -57,40 +57,4 @@ def main(filename):
         print(f"Error: File '{filename}' has incorrect format.")
 
 if __name__ == "__main__":
-    # Run Programme
     main("TestData20.csv")
-
-
-# test cases
-# get_top_scorers_from_file(TestData.csv) // Sipho Lolo: 78
-"""
-/// get_top_scorers_from_file(
-    First Name,Second Name,Score
-    Dee,Moore,56
-    Sipho,Lolo,78
-    Noosrat,Hoosain,64
-    George,Of The Jungle,78)  
-    
-//
-George,Of The Jungle,78
-Sipho Lolo: 78
-
-"""
-
-"""
-/// get_top_scorers_from_file(
-    First Name,Second Name,Score
-    Dee,Moore,78
-    Sipho,Lolo,78
-    Noosrat,Hoosain,78
-    George,Of The Jungle,78
-)  
-    
-// STDOUT
-Dee Moore: 78
-George Of The Jungle: 78
-Noosrat Hoosain: 78
-Sipho Lolo: 78
-
-
-"""
