@@ -67,4 +67,4 @@ def main(filename):
         print(f"Error: File '{filename}' has incorrect format.")
 
 if __name__ == "__main__":
-    main("TestData20.csv")
+    main("TestData.csv")
