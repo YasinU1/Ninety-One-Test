@@ -13,16 +13,12 @@
 
 def read_csv_file(filename):
     """Read the content of a CSV file."""
-    #Args:filename (str): The name of the CSV file.   
-    #Returns:str: The content of the CSV file.
 
     with open(filename, 'r') as file:
         return file.read()
 
 def parse_csv_data(csv_data):
     """Turns CSV data into a dictionary of names and scores."""
-    #Args: csv_data (str): The CSV data as a string.  
-    #Returns: dict: A dictionary with names as keys and scores as values.
    
     lines = csv_data.strip().split("\n")[1:]  # Skip the header
     return {f"{first_name.strip()} {second_name.strip()}": int(score) for first_name, second_name, score in (line.split(",") for line in lines)}
@@ -31,8 +27,6 @@ def parse_csv_data(csv_data):
 
 def get_top_scorers(scores_dict):
     """Get the top scorers from a dictionary of names and scores."""
-    #Args:scores_object (dict): A dictionary with names as keys and scores as values.
-    #Returns:list: A list of names with the top score.
     
     top_score = max(scores_dict.values())
     return sorted(name for name, score in scores_dict.items() if score == top_score)
